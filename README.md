@@ -13,7 +13,7 @@
 9. [Prettier](https://prettier.io/)
 10. [Husky](https://typicode.github.io/husky/)
 
-### Installation 1
+### Installation
 ```
 yarn add @reduxjs/toolkit react-redux
 ```
@@ -35,10 +35,10 @@ npx sb init
 ```
 npm info "eslint-config-airbnb@latest" peerDependencies
 
-yarn add -D eslint-config-airbnb eslint@^8.2.0 eslint-plugin-jsx-a11y eslint-plugin-import@eslint-plugin-react@ eslint-plugin-react-hooks
+yarn add -D eslint-config-airbnb eslint@^8.2.0 eslint-plugin-jsx-a11y eslint-plugin-import@eslint-plugin-react@ eslint-plugin-react-hooks @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 ```
-yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plugin-tailwind
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plugin-tailwindcss
 ```
 
 ### Configurations
@@ -89,7 +89,7 @@ src
 > It contain the page routes
 
 ***src/routes***
-> It contain the schema files using the yup
+> It contain the schema files using the [`yup`](https://www.npmjs.com/package/yup)
 
 ***src/service***
 > It contain all request functions. We're going to use [`axios`](https://www.npmjs.com/package/axios) for rest request and [`graphql-request`](https://www.npmjs.com/package/graphql-request) for graphql request.

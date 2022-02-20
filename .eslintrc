@@ -1,7 +1,9 @@
 {
   "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": 2
+    "prettier/prettier": 2,
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }]
   },
   "env": {
     "browser": true,
