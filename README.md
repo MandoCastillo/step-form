@@ -43,6 +43,15 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plug
 
 ### Configurations
 
+#### Tailwind
+```
+```
+#### ESlint - Prettier
+```
+```
+#### Husky
+```
+```
 
 ### Structure of Component
 ```
