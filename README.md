@@ -42,3 +42,14 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plug
 ```
 
 ### Configurations
+
+
+### Structure of Component
+```
+Button.css (optional) we can separate tailwind code in this file
+Button.stories.tsx - Storybook stories
+Button.test.tsx - Jest + testing-library unit tests
+Button.tsx - component
+Button.types.ts - TS types
+index.ts - Re-exports
+```
