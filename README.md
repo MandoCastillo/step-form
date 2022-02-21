@@ -56,18 +56,38 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier prettier-plug
 ### Folder Structure
 ```
 src
-  assets
-  components
-    Button
+  - assets
+  - components
+    - Button
+      - ...
+      - Button.tsx
+      - Button.stories.tsx
+      - index.ts
+  - components-layout
+    - Sidebar
       ...
-      Button.tsx
-  constants
-  helpers
-  pages
-  routes
-  schema
-  service
-  redux
+      - Sidebar.tsx
+      - Sidebar.stories.tsx
+      - index.ts
+  - constants
+  - helpers
+  - hooks
+    - useSearch
+      - useSearch.ts
+      - useSearch.test.tsx
+      - index.ts
+  - pages
+    - Home
+      - components
+        - HomeGraph
+          - ...
+          - HomeGraph.tsx
+          - HomeGraph.test.tsx
+          - index.ts
+  - routes
+  - schemas
+  - services
+  - redux
 ```
 
 ***src/assets***
@@ -76,11 +96,17 @@ src
 ***src/components***
 > It contains the reusable atomic & molecular components. Each component folder will contain the component, test & documentation file
 
+***src/components-layout***
+> It contains components as sidebar, footer, navbar or page container, these components aren't atomic.They are making with some components
+
 ***src/constants***
 > Eg : Regex & other application generic constant
 
 ***src/helpers***
 > It contains the reusable helper functions
+
+***src/helpers***
+> It contains the reusable custom hooks
 
 ***src/pages***
 > It contain the whole page component
@@ -115,7 +141,7 @@ index.ts - Re-exports
 
 ```
 {...Simple component Structure}
-ProductCard.logic.ts
+HomeGraph.logic.ts
 ```
 > This new file will control all user interactions and requests for data. We'll use `React Query` to make requests agnostic to the backend type.
 
