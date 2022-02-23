@@ -3,6 +3,10 @@
   "rules": {
     "prettier/prettier": 2,
     "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }]
   },
   "env": {
@@ -10,5 +14,13 @@
     "node": true,
     "es6": true
   },
-  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"]
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
