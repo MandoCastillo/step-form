@@ -4,7 +4,7 @@ import { BeakerIcon, PlusIcon } from '@heroicons/react/solid';
 import Button from './Button';
 
 export default {
-  title: 'components/buttons/Button',
+  title: 'components/Button',
   component: Button,
   argTypes: {
     type: { control: 'select' },
