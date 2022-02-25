@@ -8,9 +8,11 @@ const Input: FC<InputProps> = ({ label, name, error, type, ...props }) => {
     <div
       className={`${hasError && 'text-red-500'} relative flex flex-col pb-4`}
     >
-      <label htmlFor={name} className="px-3">
-        {label}
-      </label>
+      {label && (
+        <label htmlFor={name} className="px-3">
+          {label}
+        </label>
+      )}
       <input
         name={name}
         type={type}

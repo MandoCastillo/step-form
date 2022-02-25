@@ -1,4 +1,10 @@
 export interface Country {
+  countryName: string;
+  countryShortCode: string;
+  regions: Regions[];
+}
+
+export interface Regions {
   name: string;
-  code: string;
+  shortCode: string;
 }
