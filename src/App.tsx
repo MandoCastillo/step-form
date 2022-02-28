@@ -1,8 +1,12 @@
+import { Provider } from 'react-redux';
+import UserForm from './pages/UserForm/UserForm';
+import { store } from './redux/store';
+
 const App = () => {
   return (
-    <div className="bg-slate-700 text-white">
-      <p>Hola tacos</p>
-    </div>
+    <Provider store={store}>
+      <UserForm />
+    </Provider>
   );
 };
 

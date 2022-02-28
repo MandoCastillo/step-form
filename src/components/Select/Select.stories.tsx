@@ -9,9 +9,15 @@ export default {
 } as ComponentMeta<typeof Select>;
 
 const Template =
-  <T extends {}>(): ComponentStory<SelectProps<T>> =>
-  (args) =>
-    <Select<T> {...args} />;
+  // @ts-ignore
+
+
+    <T extends {}>(): ComponentStory<SelectProps<T>> =>
+    (args) =>
+      (
+        // @ts-ignore
+        <Select<T> {...args} />
+      );
 // const Template: ComponentStory<typeof Select> = (args) => <Select {...args} />;
 // const Template = <T extends {}>
 const countriesBasic = [...countries] as Country[];
